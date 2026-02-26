@@ -111,55 +111,6 @@ export function Root() {
   );
 }
 
-function getTypeIcon(type: string): string {
-  const icons: { [key: string]: string } = {
-    fire: "🔥",
-    water: "💧",
-    grass: "🌿",
-    electric: "⚡",
-    psychic: "🧠",
-    ice: "❄️",
-    dragon: "🐉",
-    dark: "⬛",
-    fairy: "✨",
-    normal: "⭕",
-    fighting: "👊",
-    flying: "🦅",
-    poison: "☠️",
-    ground: "🗻",
-    rock: "🪨",
-    bug: "🐛",
-    ghost: "👻",
-    steel: "⚙️",
-  };
-  return icons[type] || "?";
-}
-
-function getCardBackground(type: string): string {
-  // light background for card based on primary type
-  const backgrounds: { [key: string]: string } = {
-    fire: "bg-red-200",
-    water: "bg-blue-200",
-    grass: "bg-green-200",
-    electric: "bg-yellow-200",
-    psychic: "bg-pink-200",
-    ice: "bg-cyan-200",
-    dragon: "bg-purple-200",
-    dark: "bg-gray-200",
-    fairy: "bg-pink-100",
-    normal: "bg-gray-100",
-    fighting: "bg-red-100",
-    flying: "bg-indigo-100",
-    poison: "bg-purple-100",
-    ground: "bg-yellow-300",
-    rock: "bg-yellow-400",
-    bug: "bg-green-300",
-    ghost: "bg-indigo-300",
-    steel: "bg-gray-300",
-  };
-  return backgrounds[type] || "bg-white";
-}
-
 function getHeaderGradient(type: string): string {
   const gradients: { [key: string]: string } = {
     fire: "bg-gradient-to-b from-red-500 to-orange-400",
